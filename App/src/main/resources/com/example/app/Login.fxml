@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #447fdb;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.app.LoginController">
+   <children>
+      <Text fill="WHITE" layoutX="202.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="201.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hasło">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="login_input" layoutX="274.0" layoutY="139.0" />
+      <PasswordField fx:id="password_input" layoutX="274.0" layoutY="188.0" />
+      <Text fill="WHITE" layoutX="184.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logowanie">
+         <font>
+            <Font name="Arial Italic" size="48.0" />
+         </font>
+      </Text>
+      <Button fx:id="login_button" layoutX="323.0" layoutY="228.0" mnemonicParsing="false" onAction="#Login_Button" style="-fx-background-color: #395175;" text="Zaloguj" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="300.0" layoutY="274.0" mnemonicParsing="false" onAction="#Register_Button" style="-fx-background-color: #395175;" text="Rejestracja" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="178.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nie masz konta? Zarejetruj się!" wrappingWidth="121.1328125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="msg_output_log" fill="WHITE" layoutX="200.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="225.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
